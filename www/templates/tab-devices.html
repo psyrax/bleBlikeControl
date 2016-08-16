@@ -1,0 +1,10 @@
+<ion-view view-title="Devices">
+  <ion-content>
+
+    <ion-list>
+	    <ion-item  ng-repeat="bleDevice in bleDevices" ng-show="bleDevice.name" class="item" ng-class="{'positive': bleDevice.name == selectedName}" ng-click="selectDevice(bleDevice)">
+	    	{{bleDevice.name}}
+	    </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
